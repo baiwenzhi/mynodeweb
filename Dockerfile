@@ -1,4 +1,4 @@
-FROM hub.c.163.com/nce2/nodejs:0.12.2
+FROM node:6
 
 # Create app directory
 RUN mkdir -p /home/Service
@@ -10,3 +10,4 @@ RUN npm install
 
 EXPOSE 8888
 CMD [ "npm", "start" ]
++
